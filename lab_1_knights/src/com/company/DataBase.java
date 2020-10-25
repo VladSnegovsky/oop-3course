@@ -11,26 +11,9 @@ public class DataBase {
     public static Statement statmt;
     public static ResultSet resSet;
 
-// Size - Cost - Weight
-    public static int[][] sword;
-    public static int[][] footwear;
-// Size
-// Cost - Weight
-    public static String [] armor_sizes;
-    public static int [][] armor;
+//    public static int[][] sword;
 
-    public static String [] shirt_sizes;
-    public static int [][] shirt;
-
-    public static String [] chainmail_sizes;
-    public static int [][] chainmail;
-
-    public static String [] pants_sizes;
-    public static int [][] pants;
-
-
-
-
+    
     public static int [][] ftTest;
 
     public static void Conn() throws ClassNotFoundException, SQLException {
@@ -47,14 +30,13 @@ public class DataBase {
     }
 
     //Shop
-
-    public static void ShowByCost(int min, int max, int arr){
+    public static void ShowByCost(int min, int max, int arr, Shop shop){
         boolean thereis = false;
         switch (arr){
             case 1:
-                for (int i = 1; i < shirt[0][0]; i++){
-                    if (shirt[0][i] >= min && shirt[0][i] <= max){
-                        System.out.println(shirt_sizes[i] + " " + shirt[0][i] + " coins " + shirt[1][i] + " gr.");
+                for (int i = 0; i < shop.countShirt; i++){
+                    if (shop.shirt[i].Cost >= min && shop.shirt[i].Cost <= max){
+                        System.out.println(shop.shirt[i].Size + " " + shop.shirt[i].Cost + " coins " + shop.shirt[i].Weight + " gr.");
                         thereis = true;
                     }
                 }
@@ -63,9 +45,9 @@ public class DataBase {
                     System.out.println("No things in this price range.");
                 break;
             case 2:
-                for (int i = 1; i < pants[0][0]; i++){
-                    if (pants[0][i] >= min && pants[0][i] <= max){
-                        System.out.println(pants_sizes[i] + " " + pants[0][i] + " coins " + pants[1][i] + " gr.");
+                for (int i = 0; i < shop.countPants; i++){
+                    if (shop.pants[i].Cost >= min && shop.pants[i].Cost <= max){
+                        System.out.println(shop.pants[i].Size + " " + shop.pants[i].Cost + " coins " + shop.pants[i].Weight + " gr.");
                         thereis = true;
                     }
                 }
@@ -74,9 +56,9 @@ public class DataBase {
                     System.out.println("No things in this price range.");
                 break;
             case 3:
-                for (int i = 1; i < footwear[0][0]; i++){
-                    if (footwear[1][i] >= min && footwear[1][i] <= max){
-                        System.out.println(footwear[0][i] + " " + footwear[1][i] + " coins " + footwear[2][i] + " gr.");
+                for (int i = 0; i < shop.countFootwear; i++){
+                    if (shop.footwear[i].Cost >= min && shop.footwear[i].Cost <= max){
+                        System.out.println(shop.footwear[i].Size + " " + shop.footwear[i].Cost + " coins " + shop.footwear[i].Weight + " gr.");
                         thereis = true;
                     }
                 }
@@ -85,9 +67,9 @@ public class DataBase {
                     System.out.println("No things in this price range.");
                 break;
             case 4:
-                for (int i = 1; i < chainmail[0][0]; i++){
-                    if (chainmail[0][i] >= min && chainmail[0][i] <= max){
-                        System.out.println(chainmail_sizes[i] + " " + chainmail[0][i] + " coins " + chainmail[1][i] + " gr.");
+                for (int i = 0; i < shop.countChainMail; i++){
+                    if (shop.chainmail[i].Cost >= min && shop.chainmail[i].Cost <= max){
+                        System.out.println(shop.chainmail[i].Size + " " + shop.chainmail[i].Cost + " coins " + shop.chainmail[i].Weight + " gr.");
                         thereis = true;
                     }
                 }
@@ -96,9 +78,9 @@ public class DataBase {
                     System.out.println("No things in this price range.");
                 break;
             case 5:
-                for (int i = 1; i < armor[0][0]; i++){
-                    if (armor[0][i] >= min && armor[0][i] <= max){
-                        System.out.println(armor_sizes[i] + " " + armor[0][i] + " coins " + armor[1][i] + " gr.");
+                for (int i = 0; i < shop.countArmor; i++){
+                    if (shop.armor[i].Cost >= min && shop.armor[i].Cost <= max){
+                        System.out.println(shop.armor[i].Size + " " + shop.armor[i].Cost + " coins " + shop.armor[i].Weight + " gr.");
                         thereis = true;
                     }
                 }
@@ -107,9 +89,9 @@ public class DataBase {
                     System.out.println("No things in this price range.");
                 break;
             case 6:
-                for (int i = 1; i < sword[0][0]; i++){
-                    if (sword[1][i] >= min && sword[1][i] <= max){
-                        System.out.println(sword[0][i] + " " + sword[1][i] + " coins " + sword[2][i] + " gr.");
+                for (int i = 0; i < shop.countSword; i++){
+                    if (shop.sword[i].Cost >= min && shop.sword[i].Cost <= max){
+                        System.out.println(shop.sword[i].Size + " " + shop.sword[i].Cost + " coins " + shop.sword[i].Weight + " gr.");
                         thereis = true;
                     }
                 }
@@ -122,187 +104,56 @@ public class DataBase {
         }
     }
 
-    //Sort
-
-    public static void SortOneArr(int[][] arr, boolean game) {
-        if (game) {
-            System.out.println("What a mess!:");
-            for (int i = 1; i <= arr[0][0]; i++){
-                System.out.println(Integer.toString(arr[0][i]) + " cm = " + Integer.toString(arr[1][i]) + " coins " + Integer.toString(arr[2][i]) + "gr");
-            }
-        }
-
-        if (game) {
-            System.out.println("We need to ask the blacksmith to put everything in its place.");
-            System.out.println("Press any number to ask... :");
-            Scanner in = new Scanner(System.in);
-            int num = in.nextInt();
-        }
-
-        int temp = 0;
-        int temp1 = 0;
-        int temp2 = 0;
-        boolean sorted = false;
-
-        while (!sorted){
-            sorted = true;
-            for (int i = 1; i < arr[0][0]; i++){
-                if (arr[2][i] > arr[2][i+1]){
-                    temp = arr[1][i];
-                    temp1 = arr[0][i];
-                    temp2 = arr[2][i];
-                    arr[1][i] = arr[1][i+1];
-                    arr[0][i] = arr[0][i+1];
-                    arr[2][i] = arr[2][i+1];
-                    arr[1][i+1] = temp;
-                    arr[0][i+1] = temp1;
-                    arr[2][i+1] = temp2;
-                    sorted = false;
-                }
-            }
-        }
-
-        if (game)
-            System.out.println("Good:");
-        for (int i = 1; i <= arr[0][0]; i++){
-            System.out.println(Integer.toString(arr[0][i]) + " cm = " + Integer.toString(arr[1][i]) + " " + Integer.toString(arr[2][i]) + "gr");
-        }
-    }
-
-    public static void SortTwoArr(int[][] arr, String[] arr1, boolean game) {
-        if (game) {
-            System.out.println("Ohh noo! Enemies are trying to prevent us from building an army,\n everything is scattered!:");
-            for (int i = 1; i <= arr[0][0]; i++){
-                System.out.println(arr1[i] + ": " + arr[0][i] + " coins " + arr[1][i] + "gr");
-            }
-        }
-
-        if (game) {
-            System.out.println("Let's put everything in place. Press any number to help with sorting... :");
-            Scanner in = new Scanner(System.in);
-            int num = in.nextInt();
-        }
-
-        int temp = 0;
-        int temp1 = 0;
-        String temp2 = "";
-        boolean sorted = false;
-
-        while (!sorted){
-            sorted = true;
-            for (int i = 1; i < arr[0][0]; i++){
-                if (arr[1][i] > arr[1][i+1]){
-                    temp = arr[1][i];
-                    temp1 = arr[0][i];
-                    temp2 = arr1[i];
-                    arr[1][i] = arr[1][i+1];
-                    arr[0][i] = arr[0][i+1];
-                    arr1[i] = arr1[i+1];
-                    arr[1][i+1] = temp;
-                    arr[0][i+1] = temp1;
-                    arr1[i+1] = temp2;
-                    sorted = false;
-                }
-            }
-        }
-
-        if (game)
-            System.out.println("Good:");
-        for (int i = 1; i <= arr[0][0]; i++){
-            System.out.println(arr1[i] + ": " + Integer.toString(arr[0][i]) + " coins " + Integer.toString(arr[1][i]) + "gr");
-        }
-    }
-
     //Read DB
-    public static void readFootwear() throws ClassNotFoundException, SQLException {
+    public static void readFootwear(Shop openShop) throws ClassNotFoundException, SQLException {
         resSet = statmt.executeQuery("SELECT * FROM Footwear");
-        footwear = new int[5][20];
-        int i = 1;
         while(resSet.next()) {
-            footwear[0][i] = resSet.getInt("Size");
-            footwear[1][i] = resSet.getInt("Cost");
-            footwear[2][i] = resSet.getInt("Weight");
-            i++;
+            openShop.addFootwear(resSet.getInt("Size"), resSet.getInt("Cost"), resSet.getInt("Weight"));
         }
-        footwear[0][0] = i-1;
     }
 
-    public static void readSword() throws ClassNotFoundException, SQLException {
+    public static void readSword(Shop openShop) throws ClassNotFoundException, SQLException {
         resSet = statmt.executeQuery("SELECT * FROM Sword");
-        sword = new int[5][20];
-        int i = 1;
         while(resSet.next()) {
-            sword[0][i] = resSet.getInt("Length");
-            sword[1][i] = resSet.getInt("Cost");
-            sword[2][i] = resSet.getInt("Weight");
-            i++;
+            openShop.addSword(resSet.getInt("Length"), resSet.getInt("Cost"), resSet.getInt("Weight"));
         }
-        sword[0][0] = i-1;
     }
 
-    public static void readArmor() throws ClassNotFoundException, SQLException {
+    public static void readArmor(Shop openShop) throws ClassNotFoundException, SQLException {
         resSet = statmt.executeQuery("SELECT * FROM Armor");
-        armor_sizes = new String[20];
-        armor = new int[5][20];
-        int i = 1;
         while(resSet.next()) {
-            armor_sizes[i] = resSet.getString("Size");
-            armor[0][i] = resSet.getInt("Cost");
-            armor[1][i] = resSet.getInt("Weight");
-            i++;
+            openShop.addArmor(resSet.getString("Size"), resSet.getInt("Cost"), resSet.getInt("Weight"));
         }
-        armor[0][0] = i-1;
     }
 
-    public static void readShirt() throws ClassNotFoundException, SQLException {
+    public static void readShirt(Shop openShop) throws ClassNotFoundException, SQLException {
         resSet = statmt.executeQuery("SELECT * FROM Shirts");
-        shirt_sizes = new String[20];
-        shirt = new int[5][20];
-        int i = 1;
         while(resSet.next()) {
-            shirt_sizes[i] = resSet.getString("Size");
-            shirt[0][i] = resSet.getInt("Cost");
-            shirt[1][i] = resSet.getInt("Weight");
-            i++;
+            openShop.addShirt(resSet.getString("Size"), resSet.getInt("Cost"), resSet.getInt("Weight"));
         }
-        shirt[0][0] = i-1;
     }
 
-    public static void readChainMail() throws ClassNotFoundException, SQLException {
+    public static void readChainMail(Shop openShop) throws ClassNotFoundException, SQLException {
         resSet = statmt.executeQuery("SELECT * FROM ChainMail");
-        chainmail_sizes = new String[20];
-        chainmail = new int[5][20];
-        int i = 1;
         while(resSet.next()) {
-            chainmail_sizes[i] = resSet.getString("Size");
-            chainmail[0][i] = resSet.getInt("Cost");
-            chainmail[1][i] = resSet.getInt("Weight");
-            i++;
+            openShop.addChainMail(resSet.getString("Size"), resSet.getInt("Cost"), resSet.getInt("Weight"));
         }
-        chainmail[0][0] = i-1;
     }
 
-    public static void readPants() throws ClassNotFoundException, SQLException {
+    public static void readPants(Shop openShop) throws ClassNotFoundException, SQLException {
         resSet = statmt.executeQuery("SELECT * FROM Pants");
-        pants_sizes = new String[20];
-        pants = new int[5][20];
-        int i = 1;
         while(resSet.next()) {
-            pants_sizes[i] = resSet.getString("Size");
-            pants[0][i] = resSet.getInt("Cost");
-            pants[1][i] = resSet.getInt("Weight");
-            i++;
+            openShop.addPants(resSet.getString("Size"), resSet.getInt("Cost"), resSet.getInt("Weight"));
         }
-        pants[0][0] = i-1;
     }
 
-    public static void ReadDB() throws SQLException, ClassNotFoundException {
-        readFootwear();
-        readSword();
-        readArmor();
-        readShirt();
-        readChainMail();
-        readPants();
+    public static void ReadDB(Shop openShop) throws SQLException, ClassNotFoundException {
+        readFootwear(openShop);
+        readSword(openShop);
+        readArmor(openShop);
+        readShirt(openShop);
+        readChainMail(openShop);
+        readPants(openShop);
     }
 
     public static void CloseDB() throws ClassNotFoundException, SQLException {

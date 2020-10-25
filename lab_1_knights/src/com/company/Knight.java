@@ -1,9 +1,6 @@
 package com.company;
-import javax.xml.crypto.Data;
 import java.lang.String;
-import java.sql.DatabaseMetaData;
 import java.util.Random;
-import java.util.Scanner;
 
 public class Knight {
     String Name;
@@ -18,77 +15,74 @@ public class Knight {
     int Weight;
     int Cost;
 
-    public Knight(String knight_name){
+    public Knight(String knight_name, Shop shop){
         Name = knight_name;
         Cost = 0;
-        selectShirt();
-        selectPants();
-        selectArmor();
-        selectChainMail();
-        selectFootwear();
-        selectSword();
+        selectShirt(shop);
+        selectPants(shop);
+        selectArmor(shop);
+        selectChainMail(shop);
+        selectFootwear(shop);
+        selectSword(shop);
     }
 
-    public Knight() {
-    }
-
-    public void selectShirt(){
-        int i = DataBase.shirt[0][0];
+    public void selectShirt(Shop shop){
+        int i = shop.countShirt;
         Random rand = new Random();
         int j = rand.nextInt(i-1);
         j++;
-        Shirt = DataBase.shirt_sizes[j];
-        Cost += DataBase.shirt[0][j];
-        Weight += DataBase.shirt[1][j];
+        Shirt = shop.shirt[j].Size;
+        Cost += shop.shirt[j].Cost;
+        Weight += shop.shirt[j].Weight;
     }
 
-    public void selectPants(){
-        int i = DataBase.pants[0][0];
+    public void selectPants(Shop shop){
+        int i = shop.countPants;
         Random rand = new Random();
         int j = rand.nextInt(i-1);
         j++;
-        Pants = DataBase.pants_sizes[j];
-        Cost += DataBase.pants[0][j];
-        Weight += DataBase.pants[1][j];
+        Pants = shop.pants[j].Size;
+        Cost += shop.pants[j].Cost;
+        Weight += shop.pants[j].Weight;
     }
 
-    public void selectArmor(){
-        int i = DataBase.armor[0][0];
+    public void selectArmor(Shop shop){
+        int i = shop.countArmor;
         Random rand = new Random();
         int j = rand.nextInt(i-1);
         j++;
-        Armor = DataBase.armor_sizes[j];
-        Cost += DataBase.armor[0][j];
-        Weight += DataBase.armor[1][j];
+        Armor = shop.armor[j].Size;
+        Cost += shop.armor[j].Cost;
+        Weight += shop.armor[j].Weight;
     }
 
-    public void selectChainMail(){
-        int i = DataBase.chainmail[0][0];
+    public void selectChainMail(Shop shop){
+        int i = shop.countChainMail;
         Random rand = new Random();
         int j = rand.nextInt(i-1);
         j++;
-        ChainMail = DataBase.chainmail_sizes[j];
-        Cost += DataBase.chainmail[0][j];
-        Weight += DataBase.chainmail[1][j];
+        ChainMail = shop.chainmail[j].Size;
+        Cost += shop.chainmail[j].Cost;
+        Weight += shop.chainmail[j].Weight;
     }
 
-    public void selectFootwear(){
-        int i = DataBase.footwear[0][0];
+    public void selectFootwear(Shop shop){
+        int i = shop.countFootwear;
         Random rand = new Random();
         int j = rand.nextInt(i-1);
         j++;
-        Footwear = DataBase.footwear[0][j];
-        Cost += DataBase.footwear[1][j];
-        Weight += DataBase.footwear[2][j];
+        Footwear = shop.footwear[j].Size;
+        Cost += shop.footwear[j].Cost;
+        Weight += shop.footwear[j].Weight;
     }
 
-    public void selectSword(){
-        int i = DataBase.sword[0][0];
+    public void selectSword(Shop shop){
+        int i = shop.countSword;
         Random rand = new Random();
         int j = rand.nextInt(i-1);
         j++;
-        Sword = DataBase.sword[0][j];
-        Cost += DataBase.sword[1][j];
-        Weight += DataBase.sword[2][j];
+        Sword = shop.sword[j].Size;
+        Cost += shop.sword[j].Cost;
+        Weight += shop.sword[j].Weight;
     }
 }
