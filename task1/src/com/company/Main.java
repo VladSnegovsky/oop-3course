@@ -12,7 +12,7 @@ import java.net.Socket;
 import java.net.UnknownHostException;
 
 public class Main extends JFrame implements Runnable{
-    boolean test = false;
+
     static private Socket connection;
     static private ObjectOutputStream output;
     static private ObjectInputStream intput;
@@ -27,10 +27,7 @@ public class Main extends JFrame implements Runnable{
         setLayout(new FlowLayout());
         setSize(360, 150);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        if(!test){
-            setVisible(true);
-        }
-        setLocationRelativeTo(null);
+        setVisible(true);setLocationRelativeTo(null);
 
         final JTextField text1 = new JTextField(10);
         final JTextField text2 = new JTextField(10);
@@ -85,7 +82,7 @@ public class Main extends JFrame implements Runnable{
         } catch (ClassNotFoundException e) {}
     }
 
-    public static void sendData(Object obj) throws IOException {
+    private static void sendData(Object obj) throws IOException {
         try {
             output.flush();
             output.writeObject(obj);

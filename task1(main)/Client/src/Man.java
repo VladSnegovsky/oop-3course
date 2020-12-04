@@ -1,5 +1,3 @@
-package com.company;
-
 import com.google.gson.Gson;
 
 public class Man {
@@ -24,27 +22,3 @@ public class Man {
         return name + " " + sec_name + " is " + age + " years old and is " + height + " cm height";
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

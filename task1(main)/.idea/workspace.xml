@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6f4d3d0c-2080-40a3-9e43-6c5dd467a52a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../lab_1_knights/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab_1_knights/src/com/company/Armor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab_1_knights/src/com/company/ChainMail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab_1_knights/src/com/company/Footwear.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab_1_knights/src/com/company/Pants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab_1_knights/src/com/company/Shirt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab_1_knights/src/com/company/Shop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab_1_knights/src/com/company/Sword.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../task1/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../task1/task1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../task2/task2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../task3/task3.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../task7/task7.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab_1_knights/.idea/libraries/sqlite_jdbc_3_7_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab_1_knights/out/production/testing/com/company/DataBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/../lab_1_knights/out/production/testing/com/company/DataBase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab_1_knights/out/production/testing/com/company/DataBaseTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab_1_knights/out/production/testing/com/company/Knight.class" beforeDir="false" afterPath="$PROJECT_DIR$/../lab_1_knights/out/production/testing/com/company/Knight.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab_1_knights/out/production/testing/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../lab_1_knights/out/production/testing/com/company/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab_1_knights/out/production/testing/com/company/RoundTable.class" beforeDir="false" afterPath="$PROJECT_DIR$/../lab_1_knights/out/production/testing/com/company/RoundTable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab_1_knights/src/com/company/DataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab_1_knights/src/com/company/DataBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab_1_knights/src/com/company/DataBaseTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab_1_knights/src/com/company/Knight.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab_1_knights/src/com/company/Knight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab_1_knights/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab_1_knights/src/com/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab_1_knights/src/com/company/RoundTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab_1_knights/src/com/company/RoundTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab_1_knights/testing.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../lab_1_knights/testing.iml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1jlleuzv2xGp4G3EDGZyDTvqY6B" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="15" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../task1" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Client">
+    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Client" />
+      <module name="Client" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Client" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Server" />
+      <module name="Server" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Server" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ServerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Client" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Server" />
+        <item itemvalue="JUnit.ServerTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6f4d3d0c-2080-40a3-9e43-6c5dd467a52a" name="Default Changelist" comment="" />
+      <created>1604386659020</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604386659020</updated>
+      <workItem from="1604386660190" duration="2141000" />
+      <workItem from="1604403471580" duration="251000" />
+      <workItem from="1604479148527" duration="800000" />
+      <workItem from="1607091887630" duration="337000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="249" y="0" key="#Project_Structure" timestamp="1604386678731">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="249" y="0" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1604386678731" />
+    <state x="599" y="95" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog" timestamp="1604387085235">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="599" y="95" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog/0.0.1536.824@0.0.1536.824" timestamp="1604387085235" />
+    <state x="473" y="153" key="FileChooserDialogImpl" timestamp="1607091998429">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="473" y="153" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1607091998429" />
+    <state width="1493" height="328" key="GridCell.Tab.0.bottom" timestamp="1607092224446">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="328" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607092224446" />
+    <state width="1493" height="328" key="GridCell.Tab.0.center" timestamp="1607092224446">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="328" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1607092224446" />
+    <state width="1493" height="328" key="GridCell.Tab.0.left" timestamp="1607092224445">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="328" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1607092224445" />
+    <state width="1493" height="328" key="GridCell.Tab.0.right" timestamp="1607092224446">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="328" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1607092224446" />
+    <state x="249" y="0" key="SettingsEditor" timestamp="1604387094052">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1604387094052" />
+    <state x="498" y="304" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1604403652568">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="498" y="304" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1536.824@0.0.1536.824" timestamp="1604403652568" />
+    <state x="540" y="206" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1604403665005">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="540" y="206" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.824@0.0.1536.824" timestamp="1604403665005" />
+    <state x="209" y="32" key="new project wizard" timestamp="1604386721251">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="209" y="32" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1604386721251" />
+  </component>
+</project>
